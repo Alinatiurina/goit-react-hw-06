@@ -16,7 +16,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={css.container}>
       <div className={css.form}>
         <label>Name:</label>
         <input

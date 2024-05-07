@@ -7,10 +7,10 @@ import { MdClose } from 'react-icons/md';
 
 export const Contact = ({ contact, onDelete }) => {
   return (
-      <div className={css.container}>
-          <div className={css.contact}>
-      <p className={css.text}>Name: {contact.name}</p>
-      <p className={css.text}>Number: {contact.number}</p></div>
+    <div className={css.container}>
+      <div className={css.contact}>
+        <p className={css.text}><FaUser /> {contact.name}</p>
+        <p className={css.text}> <BsFillTelephoneFill /> {contact.number}</p></div>
       <button className={css.button} onClick={() => onDelete(contact.id)}>Delete</button>
     </div>
   );

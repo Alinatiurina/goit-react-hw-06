@@ -18,6 +18,7 @@ const SearchBox = () => {
                 type="text"
                 value={nameFilter}
                 onChange={handleNameFilterChange}
+                 placeholder="Enter searching name"
             />
         </>
     );
